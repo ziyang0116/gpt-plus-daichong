@@ -46,45 +46,24 @@ flowchart LR
 
 适合 iPhone、iPad 用户，不用境外信用卡：把 Apple ID 切到美区，用美区 App Store 礼品卡充值，再在 ChatGPT iOS 客户端内购订阅。
 
-1. **切换到美区。** 「设置」→ 顶部 Apple 账户 → 「媒体与购买项目」→ 「国家/地区」→ 选美国并同意条款。切换前需用完余额、取消会阻止切换的订阅。[Apple 官方说明](https://support.apple.com/zh-cn/118283)
+1. 切换到美区
 2. 在 App Store 搜索「ChatGPT」，认准开发者为 **OpenAI**，下载官方应用。
 3. 用本人 OpenAI 账号登录，不要购买、租用或使用来历不明的账号。
 4. 正规渠道购买美区礼品卡，兑换到该 Apple ID 的余额。
 5. 在 ChatGPT iOS 订阅页选择方案，用余额完成内购。
 
-订阅由 Apple 扣款，续费与取消在「设置 → Apple 账户 → 订阅」处理，卸载 App 不会取消。礼品卡须来源正规、且与账户地区一致；切区不会自动迁移原有订阅与余额。App Store 地区不等于服务可用，OpenAI 仍按[支持地区](https://help.openai.com/en/articles/7947663-chatgpt-supported-countries-and-territories)与风控判断资格。[OpenAI iOS App FAQ](https://help.openai.com/en/articles/7885016-chatgpt-ios-app-faq)
-
 ## 方式三：通过 Google Play 开通 ChatGPT Plus
 
-安卓用户可以像购买其他应用内订阅一样，在 Google Play 内完成 ChatGPT Plus 的开通。它的优点是走 Google 的官方内购通道，不必在 OpenAI 官网反复绑卡；代价是订阅关系托管在 Google —— 取消、退款、更换支付方式都要到 Google Play 处理，实际价格也会随地区与税费变化。
+适合安卓用户：用符合 Google Play 与 ChatGPT 地区要求的 Google 账号，在官方 ChatGPT 应用内完成内购。订阅由 Google 托管，取消、退款、换支付方式都要去 Google Play 处理。
 
-**准备工作**
+1. 在 Android 打开 Google Play，登录已设置好地区与付款资料的 Google 账号。
+2. 搜索「openai chatgpt」，认准开发者为 **OpenAI**，下载官方应用。
+3. 用本人 OpenAI 账号登录，点击 **Upgrade to Plus**。
+4. 核对方案、币种、税费与自动续费后付款，Plus 权益会绑定到当前 OpenAI 账号。
 
-- **合规的 Google 账号：** 账号的国家/地区须同时是 Google Play 与 ChatGPT 提供服务的地区。要注意，Google Play 的“国家/地区”与账号支付资料绑定：首次设置后 **每 90 天只能更改一次**，且添加新国家/地区通常要求“当前身处该地区并拥有当地的支付方式”；Google Family（家庭群组）成员无法自行更改。因此不要为了订阅而反复切区。[Google Play 更改国家/地区说明](https://support.google.com/googleplay/answer/7431675)
-- **可用的支付方式：** 可以是 Google Play 接受的信用卡/借记卡（如 Visa、Mastercard），也可以是 **Google Play 余额或 Google Play 礼品卡**，部分地区还支持运营商代扣等本地方式。账号地区、支付方式与账单资料应真实且相互一致。
-- **正常、稳定的服务可用性：** 在官方支持的地区、符合当地法律与平台条款的网络环境下操作。若商店不可用，不建议安装来路不明的 APK，应通过 Google Play 官方渠道获取与更新应用。
+支付可用 Google Play 接受的银行卡，或 Google Play 余额 / 礼品卡。Google Play 按账号法定地址计征消费税，结算页「总计」才是最终金额，账单信息须如实填写；其地区每 90 天只能改一次，且通常要求身处当地并有当地支付方式，不要反复切区。
 
-**开通流程**
-
-1. 在 Android 设备打开 Google Play 商店，登录已完成“国家/地区”与付款资料设置的 Google 账号。
-2. 搜索“openai chatgpt”，确认开发者为 **OpenAI** 后下载官方 ChatGPT 应用。
-3. 打开 ChatGPT App，登录自己的 OpenAI 账号。
-4. 点击 **Upgrade to Plus（升级至 Plus）**，进入 Google Play 内购页面，选择所需方案与周期。
-5. 在结算页面核对 **方案、币种、税费与自动续费** 信息，确认无误后付款；成功后，Plus 权益会关联到当前登录的 OpenAI 账号。
-
-ChatGPT Plus 官方标价为 **20 美元/月**，但 Google Play 的实际扣款会随所在国家/地区的定价、汇率与 **当地消费税** 变化，结算页显示的“总计”才是最终金额。Google Play 依据账号的法定地址计征消费税，所以不同地区的总价可能高于或低于 20 美元。[OpenAI Plus 说明](https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus)  请如实填写账单信息——为规避税费而填写虚假地址既违反平台条款，也可能导致支付失败或账号受限，不建议尝试。
-
-**订阅管理：取消、续费与退款**
-
-- **取消续费：** 卸载 App **不会**取消订阅。正确做法是打开 Google Play 商店 → 个人头像 → **付款和订阅（Subscriptions）** → 选择 ChatGPT → **取消订阅**。取消后，在当前已付费周期结束前仍可继续使用，之后不再扣款。[Google Play 取消订阅说明](https://support.google.com/googleplay/answer/7018481) / [Android 取消订阅说明](https://help.openai.com/en/articles/8258076-how-to-cancel-a-plus-subscription-in-the-chatgpt-android-app)
-- **续费扣款：** 订阅默认按周期自动续费，续费日前最多约 48 小时可能产生授权冻结。若担心主支付方式失败，可在 Google Play 中设置**备用支付方式**，避免因扣款失败导致订阅被取消。
-- **退款：** Google Play 对多数购买不予退款。若需为订阅申请退款，一般应在购买后 **48 小时内** 通过 Google Play 申请；超过 48 小时后需联系开发者（OpenAI），按其政策与当地法律处理。[Google Play 退款政策](https://support.google.com/googleplay/answer/15574908)
-- **已付款但未生效：** 先确认 ChatGPT 登录的是同一个 OpenAI 账号，并保留 Google Play 订单号；若长时间未开通，可凭订单号联系 Google Play 或 OpenAI 支持核实，不要反复重复购买。
-
-**其他注意事项**
-
-- 不要购买、租用或使用来源不明的 ChatGPT 或 Google 账号；账单姓名、地址等资料应如实填写，不要使用虚假信息或规避平台限制的手段。
-- 换区不会自动迁移已有订阅、余额与积分：Google Play 余额与地区绑定、无法跨区使用，原订阅仍留在旧付款资料上，通常需要先取消、再在新地区重新订阅。
+订阅默认自动续费，卸载 App 不会取消——在「Google Play → 付款和订阅」中取消，取消后可用到当期结束。退款须在购买后 48 小时内通过 Google Play 申请，超时联系 OpenAI；担心扣款失败可在 Google Play 设置备用支付方式。[取消订阅说明](https://support.google.com/googleplay/answer/7018481) · [退款政策](https://support.google.com/googleplay/answer/15574908) · [OpenAI Plus 说明](https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus)
 
 ## 方式四：通过 OpenAI 官网开通 ChatGPT Plus（虚拟卡支付）
 
