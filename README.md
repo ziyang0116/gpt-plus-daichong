@@ -64,8 +64,6 @@ flowchart LR
 
 Google Play 按账号法定地址计征消费税，结算页「总计」才是最终金额。付款失败多因卡未开通境外支付、额度不足、IP 与账单地址地区不符或银行风控，可逐一排查，别反复重试。
 
-订阅自动续费，卸载 App 不会取消——在「Google Play → 付款和订阅」中取消，取消后可用到当期结束；为降低风控，尽量固定同一地区节点，不要与他人共享账号。[取消说明](https://support.google.com/googleplay/answer/7018481) · [退款政策](https://support.google.com/googleplay/answer/15574908)
-
 ## 方式四：通过 OpenAI 官网开通 ChatGPT Plus（虚拟卡支付）
 
 在 [chatgpt.com](https://chatgpt.com) 直接订阅，权益绑定自己的 OpenAI 账号，网页 / 桌面 / 手机端通用。门槛在支付：官网走 Stripe，只收官方支持地区的卡，国内卡常被拒付，部分用户会用虚拟卡（第三方签发的线上外币卡）完成付款。
