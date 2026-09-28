@@ -22,7 +22,7 @@ flowchart LR
 | Google Play Store | 已有合规海外 Google Play 账号的安卓用户 | 走 Google 官方内购，支持银行卡或 Google Play 余额/礼品卡 | 订阅由 Google 托管，地区、账单资料及支付方式须真实且符合 Google、OpenAI 规则 |
 | OpenAI 官网 + 虚拟卡 | 已具备合规账号、熟悉海外支付并愿自行排障的用户 | 订阅直接绑定自己的 OpenAI 账号，网页/桌面/移动端通用 | 卡段风控易失败，虚拟卡平台与余额存在风险，须遵守地区与服务条款 |
 
-## 方式一：通过第三方平台开通——更适合新手
+## 方式一：通过第三方平台开通
 
 对多数国内用户而言，第三方平台往往是门槛较低的选择：不必自行研究海外账号、支付方式及订阅流程，遇到登录、套餐或续费问题也能直接获得中文支持。
 
@@ -31,8 +31,8 @@ flowchart LR
 其优势主要体现在三点：
 
 1. **微信客服全程协助。** 从选购、开通到后续使用，有问题可以通过微信咨询，沟通成本相对较低。
-2. **售后保障更清晰。** 相较于来源不明的个人卖家，正规平台通常会说明交付内容、售后范围与处理流程。购买前应主动确认账号归属、可用期限、故障处理方式，以及是否支持续费。
-3. **性价比高。** 12gpt.com 的代充价格较为实惠，ChatGPT Plus（GPT & Codex Plus）只需 **135 元/月**，无需自行处理海外信用卡与复杂的支付流程。不同用户对模型、额度和使用频率的需求不同，可按实际需求选择对应档位，避免为用不到的高强度额度多付费。
+2. **售后保障更清晰。** 相较于来源不明的个人卖家，正规平台通常会说明交付内容、售后范围与处理流程。
+3. **性价比高。** 12gpt.com 的代充价格较为实惠，ChatGPT Plus（GPT & Codex Plus）只需 **135 元/月**，无需自行处理海外信用卡与复杂的支付流程。
 
 **12gpt.com 参考价格**（以平台实时展示为准）
 
@@ -44,18 +44,31 @@ flowchart LR
 
 ## 方式二：美区 App Store 下载官方应用与礼品卡内购
 
-这一方式仅适用于 iPhone、iPad 等 iOS/iPadOS 设备。用户可使用或借用一台苹果设备，在符合 Apple 与 OpenAI 规则的前提下，将 Apple ID 切换至美区；随后购买美区 App Store 礼品卡并完成余额充值，再于 ChatGPT iOS 客户端内购买订阅。
+这一方式适用于 iPhone、iPad 等 iOS/iPadOS 设备，适合没有境外信用卡、但使用苹果设备的用户。思路是：在符合 Apple 与 OpenAI 规则的前提下把 Apple ID 切换到美区，购买美区 App Store 礼品卡充值余额，再在 ChatGPT iOS 客户端内完成订阅。付款由 Apple App Store 完成，支付链路清晰，不依赖信用卡，对 iOS 用户较为友好。
 
-具体可按以下步骤操作：
+**准备工作**
 
-1. 在 App Store 搜索“ChatGPT”，认准开发者为 **OpenAI** 的官方应用并下载安装。
-2. 使用自己的 OpenAI 账号登录；不要购买、租用或使用来历不明的 ChatGPT 账号。
-3. 购买正规渠道的美区 App Store 礼品卡，兑换至对应 Apple ID 的账户余额。
-4. 在 ChatGPT iOS 客户端的订阅页面选择所需方案，以 Apple 账户余额完成内购。
+- **一台苹果设备：** iPhone 或 iPad，且已登录准备切换地区的 Apple ID。
+- **可切换到美区的 Apple ID：** 更改国家/地区前，需先用完账户余额、取消会阻止切换的订阅，并等待预购、退款等事项结清；若加入了「家人共享」群组，可能无法更改地区。切换时系统可能要求填写新地区的有效付款方式；如页面允许，付款方式可选「无」，之后用礼品卡余额付款。
+- **正规渠道的美区 App Store 礼品卡：** 用于给美区账户充值余额。礼品卡与账户地区必须一致，不能跨区使用。
+- **自己的 OpenAI 账号：** 使用本人合规账号登录，不要购买、租用或使用来历不明的 ChatGPT 账号。
 
-这种方式不依赖信用卡，对没有境外信用卡的 iOS 用户较友好；付款由 Apple App Store 完成，支付链路也相对清晰、稳定。OpenAI 官方说明，ChatGPT iOS 应用可从 App Store 获取；在 iOS 端订阅的服务，也可使用同一 OpenAI 账号在其他 Apple 设备上恢复购买。[OpenAI iOS App FAQ](https://help.openai.com/en/articles/7885016-chatgpt-ios-app-faq)
+**操作步骤**
 
-需要注意的是，App Store 地区设置不等于服务一定可用：OpenAI 会依据支持地区和相关风控规则判断服务资格。礼品卡应从正规渠道购买，避免低价代充、黑卡或不明来源余额；这类交易可能导致资金损失或 Apple ID 风险。注册前可先查阅最新的[官方支持地区清单](https://help.openai.com/en/articles/7947663-chatgpt-supported-countries-and-territories)。
+1. **将 Apple ID 切换到美区。** 打开「设置」→ 点击顶部的 Apple 账户姓名 → 「媒体与购买项目（Media & Purchases）」→ 「国家/地区」→ 选择「美国」→ 阅读并同意条款与条件 → 按提示设置付款方式与账单地址。切换前请先花完余额、取消会阻止切换的订阅。[Apple 官方：更改 Apple 账户国家或地区](https://support.apple.com/zh-cn/118283)
+2. 在 App Store 搜索「ChatGPT」，认准开发者为 **OpenAI** 的官方应用并下载安装。
+3. 打开 ChatGPT App，使用自己的 OpenAI 账号登录。
+4. 通过正规渠道购买美区 App Store 礼品卡，并兑换到已切换到美区的 Apple ID 账户余额。
+5. 在 ChatGPT iOS 客户端的订阅页面选择所需方案，以 Apple 账户余额完成内购。成功后，Plus 权益会绑定到当前登录的 OpenAI 账号。
+
+OpenAI 官方说明，ChatGPT iOS 应用可从 App Store 获取；在 iOS 端订阅的服务，也可使用同一 OpenAI 账号在其他 Apple 设备上「恢复购买」。[OpenAI iOS App FAQ](https://help.openai.com/en/articles/7885016-chatgpt-ios-app-faq)
+
+**注意事项**
+
+- **地区设置不等于服务一定可用。** 切换 App Store 地区后，OpenAI 仍会依据支持地区与风控规则判断服务资格，操作前可先查阅最新的[官方支持地区清单](https://help.openai.com/en/articles/7947663-chatgpt-supported-countries-and-territories)。
+- **切区有副作用。** 切换地区后，原有订阅与账户余额不会自动迁移，部分已购内容可能无法使用；若余额不足一件商品的价格，需联系 Apple 支持处理。
+- **礼品卡须来自正规渠道。** 避免低价代充、黑卡或来源不明的余额，这类交易可能导致资金损失，甚至连累 Apple ID 被限制。
+- **订阅由 Apple 管理。** iOS 端订阅通过 Apple 扣款，续费与取消都在「设置 → Apple 账户 → 订阅」中操作；卸载 App 并不会取消订阅。
 
 ## 方式三：通过 Google Play 开通 ChatGPT Plus
 
