@@ -37,8 +37,9 @@ flowchart LR
 | 套餐 | 适合场景 | 价格 |
 | --- | --- | --- |
 | GPT & Codex Plus | 普通个人使用 / 日常开发 | ¥135/月 |
-| GPT & Codex Pro 5x | 高频开发 / 每天大量使用 Codex | ¥680/月 |
-| GPT & Codex Pro 20x | 长时间 / 高强度开发 | ¥1250/月 |
+| GPT & Codex Pro 100 | 高频开发 / 每天大量使用 Codex | ¥680/月 |
+| GPT & Codex Pro 200 | 长时间 / 高强度开发 | ¥1250/月 |
+| GPT & Codex Pro 500 | 超大用量 / 团队或重度多任务 | ¥3300/月 |
 
 **主要特点**
 
