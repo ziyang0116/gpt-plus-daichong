@@ -47,10 +47,11 @@ function faqHtml(tokens) {
     </details>`).join('');
 }
 
-export function renderGuide(source, repositoryUrl = 'https://github.com/ziyang0116/gpt-plus-daichong') {
+export function renderGuide(source, repositoryUrl = 'https://github.com/ziyang0116/gpt-plus-daichong', { title: pageTitle } = {}) {
   const tokens = markdown.lexer(source);
   const titleIndex = tokens.findIndex((token) => token.type === 'heading' && token.depth === 1);
-  const title = titleIndex >= 0 ? tokens[titleIndex].text : 'ChatGPT Plus 开通指南';
+  const sourceTitle = titleIndex >= 0 ? tokens[titleIndex].text : 'ChatGPT 充值指南';
+  const title = pageTitle ?? sourceTitle;
   const introIndex = tokens.findIndex((token, index) => index > titleIndex && token.type !== 'space');
   const introduction = tokens[introIndex]?.type === 'paragraph' ? tokens[introIndex] : null;
   const description = introduction?.text.replace(/\*\*|[*`]/g, '') ?? title;
@@ -79,9 +80,10 @@ export function renderGuide(source, repositoryUrl = 'https://github.com/ziyang01
   const comparison = sections.find((section) => section.title.includes('对比'));
   const faq = sections.find((section) => section.title.includes('常见问题'));
   const recommendation = sections.find((section) => section.title.includes('如何选择'));
-  const year = title.match(/20\d{2}/)?.[0];
+  const year = sourceTitle.match(/20\d{2}/)?.[0];
   const displayTitle = escapeHtml(title.replace(/（20\d{2}）$/, ''))
-    .replace('ChatGPT Plus', '<span class="title-accent">ChatGPT Plus</span>')
+    .replace(/ChatGPT(?: Plus)?/, (text) => `<span class="title-accent">${text}</span>`)
+    .replace('充值指南', '<span class="title-phrase">充值指南</span>')
     .replace('：', '<br /><span class="title-subtitle">')
     + (title.includes('：') ? '</span>' : '');
   const anchor = (section, label, className = '') => section
@@ -106,7 +108,7 @@ export function renderGuide(source, repositoryUrl = 'https://github.com/ziyang01
       <div class="reading-progress" aria-hidden="true"></div>
       <header class="site-header">
         <div class="header-inner">
-          <a href="#top" class="brand"><span class="brand-mark" aria-hidden="true">+</span><span>Plus<span class="brand-divider">/</span>开通指南</span></a>
+          <a href="#top" class="brand"><span class="brand-mark" aria-hidden="true">+</span><span>ChatGPT<span class="brand-divider">/</span>充值指南</span></a>
           <nav class="header-nav" aria-label="快捷导航">
             ${anchor(comparison, '方式对比')}${anchor(faq, '常见问题')}
             <a href="${escapeHtml(repositoryUrl)}" class="github-link" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
@@ -118,6 +120,7 @@ export function renderGuide(source, repositoryUrl = 'https://github.com/ziyang01
           <div class="hero-copy">
             <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span>实用指南${year ? `<span class="year-tag">${year}</span>` : ''}</div>
             <h1>${displayTitle}</h1>
+            ${pageTitle && comparison ? `<p class="hero-subtitle">${escapeHtml(comparison.title)}</p>` : ''}
             <div class="hero-description">${introduction ? markdown.parser([introduction]) : ''}</div>
             <div class="hero-actions">${anchor(comparison, '查看方式对比 ↗', 'button button-primary')}${anchor(recommendation, '找到适合我的方式 →', 'button button-secondary')}</div>
           </div>
@@ -138,6 +141,6 @@ export function renderGuide(source, repositoryUrl = 'https://github.com/ziyang01
           </div>
         </div>
       </main>
-      <footer class="site-footer page-width"><span>Plus / 开通指南</span><span>按需选择，从容开始。</span><a href="#top">回到顶部 ↑</a></footer>`,
+      <footer class="site-footer page-width"><span>ChatGPT / 充值指南</span><span>按需选择，从容开始。</span><a href="#top">回到顶部 ↑</a></footer>`,
   };
 }

@@ -11,7 +11,7 @@ npm ci
 npm run dev
 ```
 
-打开终端显示的地址。修改 README.md 会刷新网页；页面样式在 `src/style.css`，交互在 `src/main.js`，内容生成在 `scripts/render-guide.js`。
+打开终端显示的地址。修改 README.md 会刷新网页；网页标题在 `vite.config.js` 中单独配置，README 标题保持原样。页面样式在 `src/style.css`，交互在 `src/main.js`，内容生成在 `scripts/render-guide.js`。
 
 ## 构建与预览
 

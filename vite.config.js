@@ -13,7 +13,9 @@ export default defineConfig({
     transformIndexHtml: {
       order: 'pre',
       handler(html) {
-        const guide = renderGuide(readFileSync(readmePath, 'utf8'));
+        const guide = renderGuide(readFileSync(readmePath, 'utf8'), undefined, {
+          title: '国内用户 ChatGPT 充值指南',
+        });
         return html
           .replace('<!-- GUIDE_TITLE -->', () => guide.title)
           .replace('<!-- GUIDE_DESCRIPTION -->', () => guide.description)
