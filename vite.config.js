@@ -2,6 +2,8 @@ import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'vite';
 import { renderGuide } from './scripts/render-guide.js';
+import { renderSeoTags } from './scripts/seo.js';
+import { siteConfig } from './site.config.js';
 
 const readmePath = fileURLToPath(new URL('./README.md', import.meta.url));
 
@@ -14,11 +16,13 @@ export default defineConfig({
       order: 'pre',
       handler(html) {
         const guide = renderGuide(readFileSync(readmePath, 'utf8'), undefined, {
-          title: '国内用户 ChatGPT 充值指南',
+          title: siteConfig.title,
+          description: siteConfig.description,
         });
         return html
           .replace('<!-- GUIDE_TITLE -->', () => guide.title)
           .replace('<!-- GUIDE_DESCRIPTION -->', () => guide.description)
+          .replace('<!-- GUIDE_SEO -->', () => renderSeoTags(siteConfig))
           .replace('<!-- GUIDE_PAGE -->', () => guide.html);
       },
     },

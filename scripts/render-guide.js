@@ -47,14 +47,14 @@ function faqHtml(tokens) {
     </details>`).join('');
 }
 
-export function renderGuide(source, repositoryUrl = 'https://github.com/ziyang0116/gpt-plus-daichong', { title: pageTitle } = {}) {
+export function renderGuide(source, repositoryUrl = 'https://github.com/ziyang0116/gpt-plus-daichong', { title: pageTitle, description: pageDescription } = {}) {
   const tokens = markdown.lexer(source);
   const titleIndex = tokens.findIndex((token) => token.type === 'heading' && token.depth === 1);
   const sourceTitle = titleIndex >= 0 ? tokens[titleIndex].text : 'ChatGPT 充值指南';
   const title = pageTitle ?? sourceTitle;
   const introIndex = tokens.findIndex((token, index) => index > titleIndex && token.type !== 'space');
   const introduction = tokens[introIndex]?.type === 'paragraph' ? tokens[introIndex] : null;
-  const description = introduction?.text.replace(/\*\*|[*`]/g, '') ?? title;
+  const description = pageDescription ?? introduction?.text.replace(/\*\*|[*`]/g, '') ?? title;
   const sections = [];
   const preamble = [];
   const usedIds = new Set();
