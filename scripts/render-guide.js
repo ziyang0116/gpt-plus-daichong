@@ -47,14 +47,13 @@ function faqHtml(tokens) {
     </details>`).join('');
 }
 
-export function renderGuide(source, repositoryUrl = 'https://github.com/ziyang0116/gpt-plus-daichong', { title: pageTitle, description: pageDescription } = {}) {
+export function renderGuide(source, repositoryUrl = 'https://github.com/ziyang0116/gpt-plus-daichong', { title: pageTitle } = {}) {
   const tokens = markdown.lexer(source);
   const titleIndex = tokens.findIndex((token) => token.type === 'heading' && token.depth === 1);
   const sourceTitle = titleIndex >= 0 ? tokens[titleIndex].text : 'ChatGPT 充值指南';
   const title = pageTitle ?? sourceTitle;
   const introIndex = tokens.findIndex((token, index) => index > titleIndex && token.type !== 'space');
   const introduction = tokens[introIndex]?.type === 'paragraph' ? tokens[introIndex] : null;
-  const description = pageDescription ?? introduction?.text.replace(/\*\*|[*`]/g, '') ?? title;
   const sections = [];
   const preamble = [];
   const usedIds = new Set();
@@ -102,7 +101,6 @@ export function renderGuide(source, repositoryUrl = 'https://github.com/ziyang01
 
   return {
     title: escapeHtml(title),
-    description: escapeHtml(description),
     html: `
       <a class="skip-link" href="#guide">跳到正文</a>
       <div class="reading-progress" aria-hidden="true"></div>

@@ -1,6 +1,0 @@
-# Crawlers read robots.txt at the domain root, not a project subdirectory.
-# For project GitHub Pages, submit the sitemap below in Search Console.
-User-agent: *
-Allow: /
-
-Sitemap: https://ziyang0116.github.io/gpt-plus-daichong/sitemap.xml

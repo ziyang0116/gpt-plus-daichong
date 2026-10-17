@@ -126,7 +126,3 @@ Google Play 按账号法定地址计征消费税，结算页「总计」才是�
 - **熟悉海外支付、订阅需求多：** 再考虑官网 + 虚拟卡。
 
 > 提示：以上价格与政策以各平台及 OpenAI 官方实时信息为准。请勿使用盗刷卡、来源不明的账号或礼品卡，并注意保护账号与隐私。
-
-## 参考资料
-
-- [ChatGPT 充值参考资料（飞书知识库）](https://chatgpt-daichong.feishu.cn/wiki/UK99wAZoXinL9TkTUgGcSLgIn0d)
