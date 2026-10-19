@@ -6,6 +6,12 @@ export function escapeHtml(value) {
   })[character]);
 }
 
+function websiteLink(href) {
+  const url = new URL(href);
+  url.searchParams.set('utm_source', 'github_page');
+  return url.href;
+}
+
 const renderer = new Renderer();
 renderer.code = function (token) {
   if (token.lang?.trim() === 'mermaid') {
@@ -17,8 +23,9 @@ renderer.table = function (token) {
   return `<div class="table-scroll" role="region" aria-label="表格，可横向滚动" tabindex="0">${Renderer.prototype.table.call(this, token)}</div>`;
 };
 renderer.link = function (token) {
-  const html = Renderer.prototype.link.call(this, token);
-  return /^https?:\/\//i.test(token.href)
+  const external = /^https?:\/\//i.test(token.href);
+  const html = Renderer.prototype.link.call(this, external ? { ...token, href: websiteLink(token.href) } : token);
+  return external
     ? html.replace('<a ', '<a target="_blank" rel="noopener noreferrer" ')
     : html;
 };
@@ -109,7 +116,7 @@ export function renderGuide(source, repositoryUrl = 'https://github.com/ziyang01
           <a href="#top" class="brand"><span class="brand-mark" aria-hidden="true">+</span><span>ChatGPT<span class="brand-divider">/</span>充值指南</span></a>
           <nav class="header-nav" aria-label="快捷导航">
             ${anchor(comparison, '方式对比')}${anchor(faq, '常见问题')}
-            <a href="${escapeHtml(repositoryUrl)}" class="github-link" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="${escapeHtml(websiteLink(repositoryUrl))}" class="github-link" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
           </nav>
         </div>
       </header>
@@ -130,7 +137,7 @@ export function renderGuide(source, repositoryUrl = 'https://github.com/ziyang01
         </div>
         <div class="content-layout page-width">
           <aside class="sidebar">
-            <div class="sidebar-inner"><div class="toc-heading">本页目录 <span>CONTENTS</span></div><nav class="toc" aria-label="本页目录">${toc}</nav><a class="original-link" href="${escapeHtml(repositoryUrl)}/blob/main/README.md" target="_blank" rel="noopener noreferrer">在 GitHub 查看原文 ↗</a></div>
+            <div class="sidebar-inner"><div class="toc-heading">本页目录 <span>CONTENTS</span></div><nav class="toc" aria-label="本页目录">${toc}</nav><a class="original-link" href="${escapeHtml(websiteLink(`${repositoryUrl}/blob/main/README.md`))}" target="_blank" rel="noopener noreferrer">在 GitHub 查看原文 ↗</a></div>
           </aside>
           <div class="article-column" id="guide">
             <details class="mobile-toc"><summary>浏览本页目录<span aria-hidden="true">↓</span></summary><nav class="toc" aria-label="移动端目录">${toc}</nav></details>

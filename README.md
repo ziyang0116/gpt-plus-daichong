@@ -23,14 +23,14 @@ flowchart LR
 
 | 方式 | 成本（约） | 难度 | 适合人群 | 关键提示 |
 | --- | --- | --- | --- | --- |
-| 第三方代充平台（如 [12gpt.com](https://12gpt.com)） | ¥135/月起 | 低 | 想快速用、要中文售后 | 支持微信支付宝，无需密码，微信客服协助 |
+| 第三方代充平台（如 [12gpt.com](https://12gpt.com?utm_source=github)） | ¥135/月起 | 低 | 想快速用、要中文售后 | 支持微信支付宝，无需密码，微信客服协助 |
 | 美区 App Store | 官方 $20 + 礼品卡 | 中 | iPhone / iPad 用户 | 需切区，礼品卡须正规 |
 | Google Play | 官方 $20 + 税 | 中 | 安卓 + 国内双币卡 | 需美区账号 + 美国节点 |
 | 官网 + 虚拟卡 | 官方 $20 + 卡费用 | 高 | 熟悉海外支付的人 | 卡段风控高，虚拟卡平台易停服 |
 
 ## 方式一：通过第三方代充平台开通
 
-对多数国内用户而言，第三方平台门槛较低：不必研究海外账号与支付方式，遇到登录、套餐或续费问题也能直接获得中文支持。以 [12gpt.com](https://12gpt.com) 为例，平台主打 ChatGPT 代充服务，并提供微信客服协助。
+对多数国内用户而言，第三方平台门槛较低：不必研究海外账号与支付方式，遇到登录、套餐或续费问题也能直接获得中文支持。以 [12gpt.com](https://12gpt.com?utm_source=github) 为例，平台主打 ChatGPT 代充服务，并提供微信客服协助。
 
 **参考价格**（以平台实时展示为准）
 
@@ -51,9 +51,9 @@ flowchart LR
 
 **开通流程**
 
-1. 打开 [12gpt.com](https://12gpt.com)，按需求选择套餐并支付（微信 / 支付宝）。
+1. 打开 [12gpt.com](https://12gpt.com?utm_source=github)，按需求选择套餐并支付（微信 / 支付宝）。
 2. 按页面或客服指引，用自己的 OpenAI 账号完成核对（**不需要交出密码**）。
-3. 到账后打开 [chatgpt.com](https://chatgpt.com)，在 **Settings → Plan** 确认已显示 Plus 状态。
+3. 到账后打开 [chatgpt.com](https://chatgpt.com?utm_source=github)，在 **Settings → Plan** 确认已显示 Plus 状态。
 
 ## 方式二：美区 App Store 下载官方应用与礼品卡内购
 
@@ -81,10 +81,10 @@ Google Play 按账号法定地址计征消费税，结算页「总计」才是�
 
 ## 方式四：通过 OpenAI 官网开通 ChatGPT Plus（虚拟卡支付）
 
-在 [chatgpt.com](https://chatgpt.com) 直接订阅，权益绑定自己的 OpenAI 账号，网页 / 桌面 / 手机端通用。门槛在支付：官网走 Stripe，只收官方支持地区的卡，国内卡常被拒付，部分用户会用虚拟卡（第三方签发的线上外币卡）完成付款。
+在 [chatgpt.com](https://chatgpt.com?utm_source=github) 直接订阅，权益绑定自己的 OpenAI 账号，网页 / 桌面 / 手机端通用。门槛在支付：官网走 Stripe，只收官方支持地区的卡，国内卡常被拒付，部分用户会用虚拟卡（第三方签发的线上外币卡）完成付款。
 
-1. 打开 [chatgpt.com](https://chatgpt.com)，登录本人 OpenAI 账号。
-2. 进入 **Settings → Plan** 或点击 **Upgrade to Plus**，在[官方价格页](https://chatgpt.com/pricing/)核对套餐。
+1. 打开 [chatgpt.com](https://chatgpt.com?utm_source=github)，登录本人 OpenAI 账号。
+2. 进入 **Settings → Plan** 或点击 **Upgrade to Plus**，在[官方价格页](https://chatgpt.com/pricing/?utm_source=github)核对套餐。
 3. 在 Stripe 结算页填写虚拟卡卡号、有效期、CVV 与账单信息。
 4. 如要求 3D Secure 验证，按提示完成验证码确认。
 5. 回到 **Settings → Plan** 确认 Plus 状态，或查收订阅确认邮件。
@@ -120,7 +120,7 @@ Google Play 按账号法定地址计征消费税，结算页「总计」才是�
 
 ## 如何选择
 
-- **追求省心、需要中文售后：** 可考虑有售后保障的第三方代充平台（如 [12gpt.com](https://12gpt.com)）。
+- **追求省心、需要中文售后：** 可考虑有售后保障的第三方代充平台（如 [12gpt.com](https://12gpt.com?utm_source=github)）。
 - **只有 iPhone / iPad：** 可用美区 App Store 礼品卡内购。
 - **安卓且持有国内双币卡：** 可尝试 Google Play 内购。
 - **熟悉海外支付、订阅需求多：** 再考虑官网 + 虚拟卡。
